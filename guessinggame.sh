@@ -4,7 +4,7 @@
 numbers_of_files=$(ls -1 -p | grep -v / | wc -l)
 
 function input {
-echo "Input your number"
+echo "How many files are there ?"
 read user_number
 check_character
 }
@@ -13,7 +13,7 @@ check_character
 function game_begin {
 if [[ $user_number -lt $numbers_of_files ]]
 then 
-	echo "It is too small"
+	echo "It is too low"
 	input
 elif [[ $user_number -gt $numbers_of_files ]]
 then
