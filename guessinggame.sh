@@ -4,7 +4,7 @@
 numbers_of_files=$(ls -1 -p | grep -v / | wc -l)
 
 function input {
-echo "How many files are there ?"
+echo "How many files are in the current directory"
 read user_number
 check_character
 }
